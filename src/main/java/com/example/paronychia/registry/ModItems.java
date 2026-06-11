@@ -1,5 +1,6 @@
 package com.example.paronychia.registry;
 
+import com.example.paronychia.ParonychiaMod;
 import com.example.paronychia.item.ParonychiaCure;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -10,6 +11,6 @@ public class ModItems {
     public static final Item PARONYCHIA_CURE = new ParonychiaCure(new Item.Settings());
 
     public static void registerItems() {
-        Registry.register(Registries.ITEM, new Identifier("paronychia_mod", "paronychia_cure"), PARONYCHIA_CURE);
+        Registry.register(Registries.ITEM, new Identifier(ParonychiaMod.MOD_ID, "paronychia_cure"), PARONYCHIA_CURE);
     }
 }

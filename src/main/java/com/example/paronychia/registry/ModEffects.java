@@ -1,5 +1,6 @@
 package com.example.paronychia.registry;
 
+import com.example.paronychia.ParonychiaMod;
 import com.example.paronychia.effect.ParonychiaEffect;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -11,6 +12,6 @@ public class ModEffects {
     public static final StatusEffect PARONYCHIA = new ParonychiaEffect(StatusEffectCategory.HARMFUL, 0xFF0000);
 
     public static void registerEffects() {
-        Registry.register(Registries.STATUS_EFFECT, new Identifier("paronychia_mod", "paronychia"), PARONYCHIA);
+        Registry.register(Registries.STATUS_EFFECT, new Identifier(ParonychiaMod.MOD_ID, "paronychia"), PARONYCHIA);
     }
 }
